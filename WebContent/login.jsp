@@ -30,13 +30,12 @@
 
 					<div class="signin-form">
 						<h2 class="form-title">Sign up</h2>
-						<form method="" action="" class="register-form"
+						<form method="POST" action="loginS" class="register-form"
 							id="login-form">
 							<div class="form-group">
 								<label for="username"><i
-									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="username" id="username"
-									placeholder="Your Name" />
+									class="zmdi zmdi-account material-icons-name"></i></label> 
+									<input type="text" name="username" id="username" placeholder="Your Name" />
 							</div>
 							<div class="form-group">
 								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input

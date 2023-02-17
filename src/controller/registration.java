@@ -1,29 +1,27 @@
 package controller;
 
 import java.io.IOException;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 /**
- * Servlet implementation class loginS
+ * Servlet implementation class registration
  */
-@WebServlet("/loginS")
-public class loginS extends HttpServlet {
+@WebServlet("/registration")
+public class registration extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public loginS() {
+    public registration() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -40,27 +38,34 @@ public class loginS extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String username= request.getParameter("username");
-		String password = request.getParameter("password");
-		//data base
-		Connection con =null;
+		String username= request.getParameter("name");
+		String password = request.getParameter("pass");
+		String email = request.getParameter("email");
+		
+		  Connection con = null;
+
 		try {
+			
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetjee", "root", "");
-			Statement stm = con.createStatement();
-			ResultSet rs = stm.executeQuery( "SELECT * FROM `login` WHERE username = '"+ username +"' AND password = '"+ password +"' ");
-			if(rs.next()) {
-				response.sendRedirect("index.jsp");
-			}else {
-				System.out.println("wrong password or username");
+		   con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetjee", "root", "");
+			PreparedStatement ps = con.prepareStatement("INSERT INTO `login`(`username`, `password`, `email`) VALUES (?,?,?)");
+			ps.setString(1, username);
+			ps.setString(2, password);
+			ps.setString(3, email);
+		
+			int i = ps.executeUpdate();
+			if(i>0) {
+				System.out.print("SUCESS");
+			} else {
+				System.out.print("fail");
 			}
-	}
+		}
 		catch(Exception e){
-		System.out.println(e.getMessage());
-	}
+			System.out.println(e.getMessage());
+		}
+			
 		
 		doGet(request, response);
-	
 	}
+
 }
-	
