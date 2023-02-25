@@ -30,9 +30,29 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>WebContent/images/Ascanio.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Downloads/Ascanio.jpg</locationURI>
+		</link>
+		<link>
+			<name>WebContent/images/Largent.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Downloads/L%E2%80%99argent.jpg</locationURI>
+		</link>
+		<link>
+			<name>WebContent/images/Poil de Carotte.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Downloads/Poil%20de%20Carotte.jpg</locationURI>
+		</link>
+		<link>
 			<name>WebContent/images/ik.gif</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Downloads/ik.gif</locationURI>
+		</link>
+		<link>
+			<name>WebContent/images/nana.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Downloads/nana.jpg</locationURI>
 		</link>
 		<link>
 			<name>WebContent/images/register.png</name>

@@ -48,7 +48,7 @@ public class registration extends HttpServlet {
 			
 			Class.forName("com.mysql.jdbc.Driver");
 		   con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetjee", "root", "");
-			PreparedStatement ps = con.prepareStatement("INSERT INTO `login`(`username`, `password`, `email`) VALUES (?,?,?)");
+			PreparedStatement ps = con.prepareStatement("INSERT INTO `login`(`username`, `password`, `email`) VALUES (?,sha1(?),?)");
 			ps.setString(1, username);
 			ps.setString(2, password);
 			ps.setString(3, email);
@@ -56,8 +56,10 @@ public class registration extends HttpServlet {
 			int i = ps.executeUpdate();
 			if(i>0) {
 				System.out.print("SUCESS");
+				response.sendRedirect("login.jsp");
 			} else {
 				System.out.print("fail");
+				response.sendRedirect("registration.jsp");
 			}
 		}
 		catch(Exception e){
