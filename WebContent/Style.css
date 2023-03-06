@@ -363,3 +363,29 @@ header.sticky{
 .btn:hover{
     letter-spacing: 4px;
 }
+
+
+.button-5 {
+	font-size: 1em;
+    color: crimson;
+    background: yellow;
+    font-weight: bold;
+    padding: 10px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing:2px;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+.button-5:hover,
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}

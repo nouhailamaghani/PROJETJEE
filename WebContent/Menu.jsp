@@ -14,7 +14,7 @@
 	<section class="Expert" id="expert">
 		<div class="titre">
 			<h2 class="titre-texte">
-				<span>E</span>xpert
+				<span>M</span>enu
 			</h2>
 			<p>Voici Quelque écrivain des livre dans notre bibliothéque</p>
 		</div>
@@ -28,8 +28,9 @@
 				<div class="imbox">
 					<img src="./images/<%=rs.getString(3)%>" alt="image">
 				</div>
+				<p><%=rs.getString(2)%></p>
+				<button class="btn" role="button">Ajouter</button>
 			</div>
-		
 		<%
 		}
 		%>

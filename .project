@@ -40,6 +40,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Downloads/L%E2%80%99argent.jpg</locationURI>
 		</link>
 		<link>
+			<name>WebContent/images/Le Barbier de Séville.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Downloads/Le%20Barbier%20de%20S%C3%A9ville.jpg</locationURI>
+		</link>
+		<link>
 			<name>WebContent/images/Poil de Carotte.jpg</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Downloads/Poil%20de%20Carotte.jpg</locationURI>

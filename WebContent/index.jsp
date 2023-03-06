@@ -29,7 +29,7 @@
             <h2>Decouvrir Ce monde </h2>
             <p>Bien-venus,<br>
                 vous pouvez trouver tout les genres et les types.<br>chercher et commander pour votre besoins  </p>
-            <a href="#" class="btn1">Menu</a> 
+            <a href="./MenuS" class="btn1">Menu</a> 
         </div>
     </section>
     <section class="Expert" id="expert">
