@@ -1,14 +1,35 @@
 package Model;
 
 public class Menu {
- String Booksid;
+ int Booksid;
  String name;
  String images;
+ String PDF;
  
-public String getBooksid() {
+
+/**
+ * 
+ */
+public Menu() {
+
+}
+/**
+ * @param booksid
+ * @param name
+ * @param images
+ * @param pDF
+ */
+public Menu(int booksid, String name, String images, String pDF) {
+	super();
+	Booksid = booksid;
+	this.name = name;
+	this.images = images;
+	PDF = pDF;
+}
+public int getBooksid() {
 	return Booksid;
 }
-public void setBooksid(String booksid) {
+public void setBooksid(int booksid) {
 	Booksid = booksid;
 }
 public String getName() {
@@ -24,6 +45,11 @@ public void setImages(String images) {
 	this.images = images;
 }
 
-	
+public String getPDF() {
+	return PDF;
+}
+public void setPDF(String pDF) {
+	PDF = pDF;
+}	
 
 }

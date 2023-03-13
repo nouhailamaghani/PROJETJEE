@@ -33,43 +33,6 @@
         </div>
     </section>
     <section class="Expert" id="expert">
-    <div class="titre">
-        <h2 class="titre-texte"><span>B</span>ooks</h2>
-        <p> Voici Quelque Roman dans notre bibliotheque </p>
-    </div>
-    
-    <div class="contenu">
-        <div class="box">
-            <div class="imbox">
-               <a><img src="./images/Ascanio.jpg" alt="image"></a> 
-            </div>
-            <a  href="property-single.html" class="btn ">Ajouter</a>
-        </div>
-  
-    <div class="box">
-        <div class="imbox">
-           <a><img src="./images/Largent.jpg" alt="image"></a> 
-        </div>
-          <a  href="property-single.html" class="btn">Ajouter</a>
-    </div>
-    <div class="box">
-        <div class="imbox">
-           <a><img src="./images/Poil de Carotte.jpg" alt="image"></a> 
-        </div>
-      <a  href="property-single.html" class="btn">Ajouter</a>
-    </div>     
-      <div class="box">
-        <div class="imbox">
-           <a><img src="./images/nana.jpg" alt="image"></a> 
-        </div>
-        <a  href="property-single.html" class="btn">Ajouter</a>
-    </div>
-
-</div>
-
-    <div class="titre">
-        <a href="#" class="btn1">Voir plus</a> 
-    </div>
     
 </section>
 </body>

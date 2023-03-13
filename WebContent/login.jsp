@@ -20,19 +20,18 @@
 				<div class="signin-content">
 					<div class="signin-image">
 						<figure>
-							<img src="images/ik.gif" alt="sing up image">
+							<img src="images/book.png" alt="sing up image">
 						</figure>
 						<a href="registration.jsp" class="signup-image-link">Create an
 							account</a>
 					</div>
 
 					<div class="signin-form">
-						<h2 class="form-title">Sign up</h2>
+						<h2 class="form-title">Sign in</h2>
 						<form method="POST" action="loginS" class="register-form"
 							id="login-form">
 							<div class="form-group">
-								<label for="username"><i
-									class="zmdi zmdi-account material-icons-name"></i></label> 
+								<label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label> 
 									<input type="text" name="username" id="username" placeholder="Your Name" />
 							</div>
 							<div class="form-group">
