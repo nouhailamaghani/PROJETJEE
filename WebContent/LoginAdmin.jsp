@@ -21,15 +21,13 @@
 				<div class="signin-content">
 					<div class="signin-image">
 						<figure>
-							<img src="images/book.png" alt="sing up image">
+							<img src="images/admin.png" alt="sing up image">
 						</figure>
-						<a href="registration.jsp" class="signup-image-link">Create an
-							account</a>
 					</div>
 
 					<div class="signin-form">
 						<h2 class="form-title">Sign in</h2>
-						<form method="POST" action="loginS" class="register-form"
+						<form method="POST" action="loginA" class="register-form"
 							id="login-form">
 							<div class="form-group">
 								<label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label> 
@@ -40,9 +38,7 @@
 									type="password" name="password" id="password"
 									placeholder="Password" />
 							</div>
-							<div class="form-group">
-								<a href="forgotPassword.jsp" class="signup-image-link">forgot Password</a>
-							</div>
+							
 							<div class="form-group form-button">
 								<input type="submit" name="signin" id="signin"
 									class="form-submit" value="Log in" />
