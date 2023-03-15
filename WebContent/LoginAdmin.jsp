@@ -21,7 +21,7 @@
 				<div class="signin-content">
 					<div class="signin-image">
 						<figure>
-							<img src="images/admin.png" alt="sing up image">
+							<img src="images/admin-panel.png" alt="sing up image">
 						</figure>
 					</div>
 

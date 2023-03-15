@@ -8,10 +8,11 @@
   <title>Document</title>
 </head>
 <body>
-	<div class="container" id="container">
-           <h1 style=" color:black">HI,<c:if LoginA="${!empty sessionScope.username }">
+  <h1 style="color:#1e272e">HI,<c:if LoginA="${!empty sessionScope.username }">
                          ${ sessionScope.username }
-                            </c:if></h1>       
+                            </c:if></h1>  
+	<div class="container" id="container">
+             
 		<div class="form-container login-container">
 		
 			<form action="AddMenu" method="post"  >
