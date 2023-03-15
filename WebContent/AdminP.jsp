@@ -9,10 +9,11 @@
 </head>
 <body>
 	<div class="container" id="container">
-                  <h1>HI, <c:if loginS="${!empty sessionScope.username }">
+           <h1 style=" color:black">HI,<c:if LoginA="${!empty sessionScope.username }">
                          ${ sessionScope.username }
-                            </c:if></h1>
+                            </c:if></h1>       
 		<div class="form-container login-container">
+		
 			<form action="AddMenu" method="post"  >
 				<br><h1>form</h1><br>
 				<input type="text" name="name" placeholder="Name">
