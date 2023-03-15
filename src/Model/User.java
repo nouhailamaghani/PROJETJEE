@@ -6,10 +6,23 @@ String email;
 String password;
 
 
+/**
+ * @param username
+ * @param email
+ * @param password
+ */
+public User(String username, String email, String password) {
+	super();
+	this.username = username;
+	this.email = email;
+	this.password = password;
+}
+
 public User(String username, String email) {
 	this.username = username;
 	this.email = email;
 }
+
 public String getUsername() {
 	return username;
 }

@@ -18,10 +18,11 @@
          ${ sessionScope.username }
          </c:if>
     </a></li>
-            <li><a href="#apropos">Apropos</a></li>
-             <li><a href="#expert">Menu</a></li>
-            <li><a href="#menu">Ma liste</a></li>
+             <li><a href="./MenuS">Menu</a></li>
+            <li><a href="./ListServelet">Ma liste</a></li>
+            <li><a href="#apropos">Contact Us</a></li>
             <li><a href="./LogoutServlet">Logout</a> </li>
+             
         </ul>
     </header>
       <section class="baniere" id="baniere">
@@ -32,8 +33,6 @@
             <a href="./MenuS" class="btn1">Menu</a> 
         </div>
     </section>
-    <section class="Expert" id="expert">
-    
-</section>
+        
 </body>
 </html>

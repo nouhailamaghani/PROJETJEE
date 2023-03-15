@@ -52,7 +52,7 @@ public class Deletfromlist extends HttpServlet {
 			} catch (ClassNotFoundException | SQLException e) {
 			    // handle the exception
 			}
-			request.getRequestDispatcher("Maliste.jsp").forward(request, response);
+		  this.getServletContext().getRequestDispatcher("/ListServelet").forward(request, response);
 		doGet(request, response);
 	}
 

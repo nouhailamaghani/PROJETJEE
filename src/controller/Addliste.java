@@ -10,6 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,6 +40,7 @@ public class Addliste extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		 
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
@@ -59,7 +61,8 @@ public class Addliste extends HttpServlet {
 			} catch (ClassNotFoundException | SQLException e) {
 			    // handle the exception
 			}
-			request.getRequestDispatcher("ListServelet.java").forward(request, response);
+		  this.getServletContext().getRequestDispatcher("/ListServelet").forward(request, response);
+		 
 	}
 
 }

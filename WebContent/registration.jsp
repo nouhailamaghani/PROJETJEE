@@ -47,7 +47,7 @@
 					</div>
 					<div class="signup-image">
 						<figure>
-							<img src="images/register.png" alt="sing up image">
+							<img src="images/library.png" alt="sing up image">
 						</figure>
 						<a href="login.jsp" class="signup-image-link">I am already
 							member</a>
@@ -55,8 +55,8 @@
 				</div>
 			</div>
 		</section>
-
-
 	</div>
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

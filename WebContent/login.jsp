@@ -1,3 +1,11 @@
+<%@page import="Model.*"%>
+<%@page import="java.util.*"%>
+	<%
+	User auth = (User) request.getSession().getAttribute("auth");
+	if (auth != null) {
+		response.sendRedirect("index.jsp");
+	}
+      %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,10 +48,7 @@
 									placeholder="Password" />
 							</div>
 							<div class="form-group">
-								<input type="checkbox" name="remember-me" id="remember-me"
-									class="agree-term" /> <label for="remember-me"
-									class="label-agree-term"><span><span></span></span>Remember
-									me</label>
+								<a href="forgotPassword.jsp" class="signup-image-link">forgot Password</a>
 							</div>
 							<div class="form-group form-button">
 								<input type="submit" name="signin" id="signin"
@@ -57,5 +62,7 @@
 		</section>
 
 	</div>  
+		<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

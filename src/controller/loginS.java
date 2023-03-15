@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Properties;
 
 
 /**
@@ -50,6 +51,7 @@ public class loginS extends HttpServlet {
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetjee", "root", "");
 			Statement stm = con.createStatement();
 			ResultSet rs = stm.executeQuery( "SELECT * FROM `login` WHERE username = '"+ username +"' AND password = '"+ password +"' ");
+			request.setAttribute("auth",rs);
 			if(rs.next()) {
 				   HttpSession session = request.getSession();
 					  session.setAttribute("username", username);

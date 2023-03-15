@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,14 +39,17 @@ public class ListServelet extends HttpServlet {
 			    Class.forName("com.mysql.jdbc.Driver");
 			    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetjee", "root", "");
 			    Statement stm = con.createStatement();
-			  
 		        ResultSet rs = stm.executeQuery("SELECT * FROM `maliste`");
 		        request.setAttribute("DATA", rs);
+		      
+		     
 			    
 			} catch (ClassNotFoundException | SQLException e) {
 			    // handle the exception
 			}
-		request.getRequestDispatcher("Maliste.jsp").forward(request, response);
+		  this.getServletContext().getRequestDispatcher("/Maliste.jsp").forward(request, response);
+		  
+		
 	}
 
 	/**
