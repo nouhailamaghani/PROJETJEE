@@ -12,11 +12,14 @@
 	<%@ page import="java.sql.ResultSet"%>
 
 	<section class="Expert" id="expert">
-	  <form action="StudentServlet" method="post">
-        <input type="hidden" name="action" value="search" />
-        Search: <input type="text" name="keyword" value="${keyword}" />
-        <input type="submit" value="Go" />
-    </form>
+<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+       
+     </button>
+   </div>
+</div>
 		<div class="titre">
 			<h2 class="titre-texte">
 				<span>M</span>enu
