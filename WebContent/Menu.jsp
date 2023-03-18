@@ -12,14 +12,15 @@
 	<%@ page import="java.sql.ResultSet"%>
 
 	<section class="Expert" id="expert">
-<div class="wrap">
+<form action="Searsh" method="POST">
+	<div class="wrap">
    <div class="search">
-      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <input type="text" name="search" class="searchTerm" placeholder="What are you looking for?">
       <button type="submit" class="searchButton">
-       
      </button>
    </div>
 </div>
+</form>
 		<div class="titre">
 			<h2 class="titre-texte">
 				<span>M</span>enu

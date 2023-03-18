@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Ma liste</title>
 <link rel="stylesheet" href="tableliste.css">
 </head>
 <body>
@@ -12,6 +12,15 @@
                         	<h2 class="titre">
 				          <span>Ma</span>liste
 			                  </h2>
+			                  <form action="Searsh" method="POST">
+	                             <div class="wrap">
+                                      <div class="search">
+                                  <input type="text" name="search" class="searchTerm" placeholder="What are you looking for?">
+                                         <button type="submit" class="searchButton">
+                                          </button>
+                                      </div>
+                                   </div>
+                               </form>
                 <table class="heading">
                                 <thead>
                                     <tr>

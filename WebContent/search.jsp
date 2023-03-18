@@ -5,12 +5,25 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="tableliste.css">
 </head>
 <body>
+<style>
+</style>
+    <form action="Searsh" method="POST">
+	                             <div class="wrap">
+                                      <div class="search">
+                                  <input type="text" name="search" class="searchTerm" placeholder="What are you looking for?">
+                                         <button type="submit" class="searchButton">
+                                          </button>
+                                      </div>
+                                   </div>
+                               </form> 
       <%@ page import="java.sql.ResultSet"%>  
-                        	<h2 class="titre">
+                              	<h2 class="titre">
 				          <span>Ma</span>liste
 			                  </h2>
+			                     
                 <table class="heading">
                                 <thead>
                                     <tr>
@@ -25,7 +38,7 @@
          
                                  <%  
                                  
-                                 ResultSet s = (ResultSet) request.getAttribute("DATA");
+                                 ResultSet s = (ResultSet) request.getAttribute("search");
                                  if (s!= null && !s.isClosed()) {
 
                                   // Iterate over the ResultSet rows and display the data in a table
