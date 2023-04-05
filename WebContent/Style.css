@@ -4,6 +4,7 @@
    box-sizing: border-box;
    font-family:'poppins',sans-serif;
    scroll-behavior: smooth;
+     
 }
 p{
     font-weight: 300;
@@ -213,7 +214,7 @@ section{
     object-fit: cover;
 }
 .contact{
-    background-image:url(./images/389873.jpg) ;
+    background-image:url(./images/124383.jpg) ;
     background-size: cover;
     box-shadow: 2px 2px 12px cadetblue;
     width: 100%;

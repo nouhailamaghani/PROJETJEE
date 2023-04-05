@@ -20,7 +20,7 @@
     </a></li>
              <li><a href="./MenuS">Menu</a></li>
             <li><a href="./ListServelet">Ma liste</a></li>
-            <li><a href="#apropos">Contact Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
             <li><a href="./LogoutServlet">Logout</a> </li>
              
         </ul>
@@ -33,6 +33,26 @@
             <a href="./MenuS" class="btn1">Menu</a> 
         </div>
     </section>
-        
+        <section class="contact" id="contact">
+    <div class="titre noir">
+       <h2 class="titre-text"><span>C</span>ontact</h2> 
+       <p class="color" >vous pouvez nous contacter ici</p>   
+    </div>
+    <div class="contactform"><h3>Envoyer un message</h3>
+    <div class="inputboite">
+        <input type="text" placeholder="Nom">
+    </div>
+    <div class="inputboite">
+    <input type="text" placeholder="email">
+   </div> 
+   <div>
+    <textarea placeholder="message"></textarea>
+   </div>
+   <div class="inputboite">
+       <input type="submit" value="envoyer">
+   </div>
+   
+</div>
+</section>
 </body>
 </html>
